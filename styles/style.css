@@ -57,20 +57,31 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
 }
 
-.main-text {
-    color: white;
-    font-size: 2vw;
-    position: absolute;
-    margin-top: -10vw;
-    animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
-}
-
 main {
     max-width: 80vw;
     text-align: center;
     margin: 0 auto;
     padding: 1vw;
     color: white;
+}
+
+.main-text {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    margin-top: -10vw;
+    animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+    text-align: center;
+}
+
+.main-text::before {
+    content: "¨";
+    color: grey;
+}
+
+.main-text::after {
+    content: "¨";
+    color: grey;
 }
 
 @keyframes text-focus-in {
@@ -87,11 +98,11 @@ main {
 
 @media (max-width: 700px) {
     .typewrite {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .main-text {
-        font-size: 4vw;
+        font-size: 4.5vw;
         margin-top: -22vw;
     }
 }
