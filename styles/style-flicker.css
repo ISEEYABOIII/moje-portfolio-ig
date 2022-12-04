@@ -24,7 +24,7 @@ body {
     color: white;
     font-family: var(--f7);
     animation: text-flicker-in-glow 4s linear both;
-    filter: drop-shadow(2px 2px 10px rgb(85, 188, 186));
+    filter: drop-shadow(2px 2px 20px rgb(85, 188, 186));
 }
 
 @keyframes text-flicker-in-glow {
