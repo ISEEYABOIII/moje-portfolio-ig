@@ -63,6 +63,8 @@ main {
     margin: 0 auto;
     padding: 1vw;
     color: white;
+    font-family: var(--f3);
+    font-size: 1.5vw;
 }
 
 .main-text {
