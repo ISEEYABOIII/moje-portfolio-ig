@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Rubik+Distressed&family=Rubik+Microbe&family=Sacramento&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --f1: 'Caveat';
+    --f2: 'Dancing Script';
+    --f3: 'Indie Flower';
+    --f4: 'Sacramento';
+    --f5: 'Rubik Distressed';
+    --f6: 'Rubik Microbe';
+    --f7: 'Shadows Into Light';
+    --f8: 'Comfortaa';
+}
+
+body {
+    background-color: #1d1f21;
+    margin: 0;
+}
+
+.typewrite {
+    font-family: var(--f8);
+    font-size: 5vw;
+    background-image: url(../images/vlnkyy.gif);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 900;
+}
+
+.main-header {
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    margin-top: -10vw;
+    animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+}
+
+main {
+    max-width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1vw;
+    color: white;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
+}
