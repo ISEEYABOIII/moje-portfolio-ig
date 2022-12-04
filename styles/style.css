@@ -65,3 +65,14 @@ main {
         opacity: 1
     }
 }
+
+@media (max-width: 700px) {
+    .typewrite {
+        font-size: 10vw;
+    }
+
+    .main-text {
+        font-size: 4vw;
+        margin-top: -20vw;
+    }
+}
