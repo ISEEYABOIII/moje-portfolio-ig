@@ -10,10 +10,7 @@
     <title>jupijej</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link type="text/css" rel="stylesheet" href="styles/style-flicker.css">
-    <link type="text/css" rel="stylesheet" href="styles/style.css">
-    <link type="text/css" rel="stylesheet" href="styles/mouse-point.css">
-    <script type="text/javascript" src="scripts/typing.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <style>
 
@@ -21,35 +18,20 @@
 
 <body>
 
-    <label for="toggle">
-        <div class="enter-text">
-            <span class="enter" style="margin-left: -10vw;">[</span>
-            <span class="enter" style="padding-bottom: 2vw;">enter</span>
-            <span class="enter" style="margin-left: 10vw;">]</span>
-        </div>
+
+    <label for="toggle" class="enter-text" href="welcome.html" id="inputak">
+        <span>[</span>
+        <span>enter</span>
+        <span>]</span>
     </label>
     <input type="checkbox" id="toggle" style="visibility: hidden;">
     <div class="thunder"></div>
 
-
-    <header class="main-header">
-        <span class="main-text" style="color: gray">"<i style="color: white">You are currently viewing portfolio belonging to </i>"</span>
-        <div class="typewrite" data-type='[ "Front-end Developer", "Absolute Sigma", "Marián Mareš" ]'>
-            <div class="styledWarp" id="wrap"></div>
-        </div>
-        <div id="mouse-scroll">
-            <div class="mouse">
-                <div class="mouse-in"></div>
-            </div>
-            <div>
-                <span class="down-arrow-1"></span>
-                <span class="down-arrow-2"></span>
-                <span class="down-arrow-3"></span>
-            </div>
-        </div>
-    </header>
-    <main>
-
-    </main>
-
-</body></html>
+</body>
+<script>
+    $('#inputak').click(function() {
+        setTimeout(function() {
+            window.location.href = 'welcome.html';
+        }, 1000);
+    });
+</script></html>
