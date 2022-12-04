@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 main {
-    max-width: 80vw;
+    max-width: 80%;
     text-align: center;
     margin: 0 auto;
     padding: 1vw;
@@ -74,6 +74,8 @@ main {
     margin-top: -10vw;
     animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
     text-align: center;
+    font-family: var(--f3);
+    letter-spacing: 0.15vw;
 }
 
 .main-text::before {
@@ -104,7 +106,11 @@ main {
     }
 
     .main-text {
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin-top: -22vw;
+    }
+
+    main {
+        font-size: 6vw;
     }
 }
