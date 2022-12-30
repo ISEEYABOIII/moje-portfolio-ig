@@ -120,3 +120,32 @@ main {
         font-size: 5vw;
     }
 }
+
+.podpis {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 0.2vw;
+    position: absolute;
+    top: 60%;
+}
+
+.cls-1 {
+    animation: LineAnimation 3s ease forwards;
+    animation-delay: 10.5s;
+    stroke-dasharray: 1287.4288330078125px;
+    stroke-dashoffset: 1287.4288330078125px;
+}
+
+.cls-11 {
+    animation: LineAnimation 3s ease forwards;
+    animation-delay: 13.5s;
+    stroke-dasharray: 1287.4288330078125px;
+    stroke-dashoffset: 1287.4288330078125px;
+}
+
+@keyframes LineAnimation {
+    to {
+        stroke-dashoffset: 0px;
+    }
+}

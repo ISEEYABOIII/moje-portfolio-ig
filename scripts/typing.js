@@ -1,6 +1,6 @@
-let typeSpeed = 200;
-let deleteSpeed = 100;
-let wordDelay = 2000;
+let typeSpeed = 120;
+let deleteSpeed = 60;
+let wordDelay = 1200;
 let counter = 0;
 
 // utility function that returns a promise that resolves after t milliseconds
