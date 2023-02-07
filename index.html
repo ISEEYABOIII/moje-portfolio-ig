@@ -23,7 +23,7 @@
         <span>enter</span>
         <span>]</span>
     </label>
-    <input type="checkbox" id="toggle" style="visibility: hidden;">
+    <input type="checkbox" id="toggle" style="visibility: hidden;" unchecked>
     <div class="thunder"></div>
 
 </body>
@@ -33,17 +33,4 @@
             window.location.href = 'welcome.html';
         }, 800);
     });
-
-    (function() {
-        if (window.localStorage) {
-            if (!localStorage.getItem('firstLoad')) {
-                localStorage['firstLoad'] = true;
-                window.location.reload();
-            } else
-                localStorage.removeItem('firstLoad');
-        }
-    })();
-
-</script>
-
-</html>
+</script></html>
