@@ -75,6 +75,12 @@ main p {
     align-self: flex-start;
 }
 
+main p span {
+    font-size: 1vw;
+    line-height: 1em;
+    color: #b2b2b2;
+}
+
 main p:nth-child(even) {
     text-align: right;
     align-self: flex-end;
@@ -136,6 +142,10 @@ main a {
         font-size: 6vw;
     }
 
+    main p span {
+        font-size: 4vw;
+    }
+
     main {
         max-width: 80%;
         margin: 0 auto;
@@ -153,6 +163,10 @@ main a {
     main p {
         font-size: 2vw;
         max-width: 80%;
+    }
+
+    main p span {
+        font-size: 1.5vw;
     }
 
     div.toolbar {
@@ -222,6 +236,10 @@ main a {
     main p {
         font-size: 5vw;
     }
+
+    main p span {
+        font-size: 3vw;
+    }
 }
 
 .toolbar {
@@ -266,6 +284,6 @@ main a {
     border-radius: 20px;
 }
 
-.grr {
+.btn.active {
     background-color: rgb(255, 255, 255, 0.2);
 }
