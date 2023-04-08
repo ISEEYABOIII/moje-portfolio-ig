@@ -189,14 +189,14 @@ main a {
 
 .cls-1 {
     animation: LineAnimation 3s ease forwards;
-    animation-delay: 10.5s;
+    animation-delay: 9s;
     stroke-dasharray: 1287.4288330078125px;
     stroke-dashoffset: 1287.4288330078125px;
 }
 
 .cls-11 {
     animation: LineAnimation 3s ease forwards;
-    animation-delay: 13.5s;
+    animation-delay: 12s;
     stroke-dasharray: 1287.4288330078125px;
     stroke-dashoffset: 1287.4288330078125px;
 }
@@ -286,4 +286,42 @@ main a {
 
 .btn.active {
     background-color: rgb(255, 255, 255, 0.2);
+}
+
+
+
+
+.image-preview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.image-preview .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.preview-img {
+    max-width: calc(100% - 6rem);
+    max-height: calc(100% - 6rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-preview {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
 }
